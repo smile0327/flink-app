@@ -15,21 +15,12 @@
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-core -->
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-core</artifactId>
-            <version>1.7.0</version>
-            <scope>compile</scope>
-        </dependency>
-
-
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-java -->
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-streaming-java_2.11</artifactId>
             <version>${flink-version}</version>
-            <scope>compile</scope>
+            <!--<scope>compile</scope>-->
         </dependency>
 
         <dependency>
