@@ -45,6 +45,7 @@ public class KafkaWithEventTimeExample {
                 sourceTopic,
                 new KafkaWithTsMsgSchema(),
                 p);
+        consumer.setStartFromLatest();
         // 读取Kafka消息
         TypeInformation<Tuple2<String, Long>> typeInformation = new TupleTypeInfo<Tuple2<String, Long>>(
                 BasicTypeInfo.STRING_TYPE_INFO, BasicTypeInfo.LONG_TYPE_INFO);
